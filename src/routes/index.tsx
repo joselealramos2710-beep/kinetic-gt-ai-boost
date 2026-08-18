@@ -9,6 +9,7 @@ import {
   ArrowUpRight,
   Check,
   Mail,
+  CarFront,
 } from "lucide-react";
 import heroCar from "@/assets/hero-car.jpg";
 import logoFull from "@/assets/kinetic-logo.png";
