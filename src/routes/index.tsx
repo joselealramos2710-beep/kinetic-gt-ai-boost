@@ -333,9 +333,15 @@ function Index() {
             KINETIK GT GROUP
           </span>
           <span>Automatización con IA para concesionarios · España</span>
-          <a href="mailto:kineticgtgroup@gmail.com" className="hover:text-foreground">
-            kineticgtgroup@gmail.com
-          </a>
+          <div className="flex flex-col items-center gap-1 md:items-end">
+            <a href="mailto:kineticgtgroup@gmail.com" className="hover:text-foreground">
+              kineticgtgroup@gmail.com
+            </a>
+            <a href="tel:+34675436098" className="hover:text-foreground">
+              +34 675 43 60 98
+            </a>
+          </div>
+
         </div>
       </footer>
     </div>
