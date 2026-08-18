@@ -19,6 +19,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { TestDriveBooking } from "@/components/TestDriveBooking";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -27,13 +28,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Agencia de automatización con IA para concesionarios: agentes que llaman, cualifican leads y llenan la agenda del taller 24/7.",
+          "Agencia de automatización con IA para concesionarios: agentes que llaman, cualifican clientes y llenan la agenda del taller 24/7.",
       },
       { property: "og:title", content: "Kinetik GT Group | Automatización con IA para concesionarios" },
       {
         property: "og:description",
         content:
-          "Agentes de IA que atienden cada lead en menos de 60 segundos y convierten llamadas perdidas en citas de venta y taller.",
+          "Agentes de IA que atienden a cada cliente en menos de 60 segundos y convierten llamadas perdidas en citas de venta y taller.",
       },
     ],
   }),
@@ -48,7 +49,7 @@ const services = [
   },
   {
     icon: MessagesSquare,
-    title: "Cualificación de leads",
+    title: "Cualificación de clientes",
     text: "WhatsApp, web y portales unificados. La IA responde en segundos, filtra curiosos y pasa al comercial solo lo caliente.",
   },
   {
@@ -74,7 +75,7 @@ const services = [
 ];
 
 const metrics = [
-  { value: "<60s", label: "Tiempo de respuesta al lead" },
+  { value: "<60s", label: "Tiempo de respuesta al cliente" },
   { value: "+38%", label: "Citas de prueba de conducción" },
   { value: "24/7", label: "Cobertura sin turnos" },
   { value: "3x", label: "Recuperación de llamadas perdidas" },
@@ -84,7 +85,7 @@ const steps = [
   {
     n: "01",
     title: "Diagnóstico",
-    text: "Auditamos llamadas, tiempos de respuesta y fugas de leads durante una semana.",
+    text: "Auditamos llamadas, tiempos de respuesta y fugas de clientes durante una semana.",
   },
   {
     n: "02",
@@ -123,6 +124,9 @@ function Index() {
             </a>
             <a href="#proceso" className="transition-colors hover:text-foreground">
               Proceso
+            </a>
+            <a href="#cita" className="transition-colors hover:text-foreground">
+              Citas
             </a>
             <a href="#resultados" className="transition-colors hover:text-foreground">
               Resultados
@@ -168,7 +172,7 @@ function Index() {
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href="#servicios">Ver qué automatizamos</a>
+                <a href="#cita">Agendar prueba de vehículo</a>
               </Button>
             </div>
           </div>
@@ -205,6 +209,8 @@ function Index() {
             ))}
           </div>
         </section>
+
+        <TestDriveBooking />
 
         {/* Proceso */}
         <section id="proceso" className="border-y border-border bg-card/40 py-24">
@@ -297,7 +303,7 @@ function Index() {
               Descubre cuántas ventas <span className="text-heat">se te escapan</span> cada mes
             </h2>
             <p className="mx-auto mt-6 max-w-xl text-muted-foreground">
-              Auditoría gratuita de 30 minutos: analizamos tu flujo de leads y te entregamos un plan
+              Auditoría gratuita de 30 minutos: analizamos tu flujo de clientes y te entregamos un plan
               de automatización concreto, lo trabajes con nosotros o no.
             </p>
             <Button
