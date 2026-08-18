@@ -180,9 +180,6 @@ function Index() {
                   Reservar auditoría de 30 min <ArrowUpRight className="ml-1 size-4" />
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline">
-                <a href="#cita">Agendar prueba de vehículo</a>
-              </Button>
             </div>
           </div>
         </section>
