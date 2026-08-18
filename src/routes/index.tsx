@@ -9,6 +9,7 @@ import {
   ArrowUpRight,
   Check,
   Mail,
+  CarFront,
 } from "lucide-react";
 import heroCar from "@/assets/hero-car.jpg";
 import logoFull from "@/assets/kinetic-logo.png";
@@ -80,6 +81,11 @@ const services = [
     icon: Gauge,
     title: "Panel de rendimiento",
     text: "Coste por cita, tasa de contacto y conversión real por fuente. Datos, no intuiciones.",
+  },
+  {
+    icon: CarFront,
+    title: "Agenda inteligente de pruebas",
+    text: "Los clientes reservan su prueba de vehículo online y la IA confirma, recuerda y reprograma la cita según la disponibilidad real del coche y del comercial.",
   },
 ];
 
@@ -200,7 +206,7 @@ function Index() {
         <section id="servicios" className="mx-auto max-w-6xl px-6 py-24">
           <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Servicios</p>
           <h2 className="mt-4 max-w-2xl text-4xl font-bold md:text-5xl">
-            Seis motores de automatización, un solo objetivo: más entregas.
+            Siete motores de automatización, un solo objetivo: más entregas.
           </h2>
           <div className="mt-14 grid gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-2 lg:grid-cols-3">
             {services.map((s) => (
