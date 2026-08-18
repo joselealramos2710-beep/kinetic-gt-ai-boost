@@ -81,6 +81,11 @@ const services = [
     title: "Panel de rendimiento",
     text: "Coste por cita, tasa de contacto y conversión real por fuente. Datos, no intuiciones.",
   },
+  {
+    icon: CarFront,
+    title: "Agenda inteligente de pruebas",
+    text: "Los clientes reservan su prueba de vehículo online y la IA confirma, recuerda y reprograma la cita según la disponibilidad real del coche y del comercial.",
+  },
 ];
 
 const metrics = [
