@@ -10,6 +10,8 @@ import {
   Check,
 } from "lucide-react";
 import heroCar from "@/assets/hero-car.jpg";
+import logoFull from "@/assets/kinetic-logo.png";
+import isologo from "@/assets/kinetic-isologo.png";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -21,13 +23,13 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Kinetic GT | Automatización con IA para concesionarios" },
+      { title: "Kinetik GT Group | Automatización con IA para concesionarios" },
       {
         name: "description",
         content:
           "Agencia de automatización con IA para concesionarios: agentes que llaman, cualifican leads y llenan la agenda del taller 24/7.",
       },
-      { property: "og:title", content: "Kinetic GT | Automatización con IA para concesionarios" },
+      { property: "og:title", content: "Kinetik GT Group | Automatización con IA para concesionarios" },
       {
         property: "og:description",
         content:
@@ -106,8 +108,14 @@ function Index() {
     <div className="min-h-screen bg-background">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-          <a href="#top" className="font-display text-lg font-bold tracking-tight">
-            KINETIC<span className="text-heat"> GT</span>
+          <a href="#top" className="flex items-center">
+            <img
+              src={logoFull}
+              alt="Kinetik GT Group"
+              width={734}
+              height={208}
+              className="h-8 w-auto"
+            />
           </a>
           <nav className="hidden items-center gap-8 text-sm text-muted-foreground md:flex">
             <a href="#servicios" className="transition-colors hover:text-foreground">
@@ -137,7 +145,7 @@ function Index() {
             alt="Coche deportivo en un showroom con iluminación ámbar y lima"
             width={1600}
             height={1008}
-            className="absolute inset-0 h-full w-full object-cover opacity-45"
+            className="absolute inset-0 h-full w-full object-cover opacity-70"
           />
           <div className="absolute inset-0 bg-[image:var(--gradient-fade)]" />
           <div className="surface-grid absolute inset-0 opacity-60" />
@@ -150,7 +158,7 @@ function Index() {
               <span className="text-heat"> Pierde tiempo de respuesta.</span>
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-              Kinetic GT instala agentes de IA que atienden cada llamada, cada formulario y cada
+              Kinetik GT Group instala agentes de IA que atienden cada llamada, cada formulario y cada
               WhatsApp en menos de 60 segundos, y los convierten en citas de venta y taller.
             </p>
             <div className="mt-10 flex flex-wrap gap-3">
@@ -307,8 +315,16 @@ function Index() {
 
       <footer className="border-t border-border py-10">
         <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-sm text-muted-foreground md:flex-row">
-          <span className="font-display text-foreground">
-            KINETIC<span className="text-heat"> GT</span>
+          <span className="flex items-center gap-3 font-display text-foreground">
+            <img
+              src={isologo}
+              alt="Isologo Kinetik GT Group"
+              width={380}
+              height={342}
+              loading="lazy"
+              className="h-8 w-auto"
+            />
+            KINETIK GT GROUP
           </span>
           <span>Automatización con IA para concesionarios · España</span>
           <a href="mailto:hola@kineticgt.com" className="hover:text-foreground">
