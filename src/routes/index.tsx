@@ -315,6 +315,13 @@ function Index() {
                 Solicitar auditoría <ArrowUpRight className="ml-1 size-4" />
               </a>
             </Button>
+            <p className="mt-6 text-sm text-muted-foreground">
+              O llámanos:{" "}
+              <a href="tel:+34675436098" className="text-foreground hover:text-heat">
+                +34 675 43 60 98
+              </a>
+            </p>
+
           </div>
         </section>
       </main>
