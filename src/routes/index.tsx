@@ -8,6 +8,7 @@ import {
   Workflow,
   ArrowUpRight,
   Check,
+  Mail,
 } from "lucide-react";
 import heroCar from "@/assets/hero-car.jpg";
 import logoFull from "@/assets/kinetic-logo.png";
