@@ -206,7 +206,7 @@ function Index() {
         <section id="servicios" className="mx-auto max-w-6xl px-6 py-24">
           <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground">Servicios</p>
           <h2 className="mt-4 max-w-2xl text-4xl font-bold md:text-5xl">
-            Seis motores de automatización, un solo objetivo: más entregas.
+            Siete motores de automatización, un solo objetivo: más entregas.
           </h2>
           <div className="mt-14 grid gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-2 lg:grid-cols-3">
             {services.map((s) => (
