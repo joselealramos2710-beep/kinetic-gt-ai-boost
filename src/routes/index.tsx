@@ -208,17 +208,31 @@ function Index() {
           <h2 className="mt-4 max-w-2xl text-4xl font-bold md:text-5xl">
             Siete motores de automatización, un solo objetivo: más entregas.
           </h2>
-          <div className="mt-14 grid gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-2 lg:grid-cols-3">
-            {services.map((s) => (
-              <div
-                key={s.title}
-                className="group bg-background p-8 transition-colors hover:bg-card"
-              >
-                <s.icon className="size-6 text-primary" strokeWidth={1.5} />
-                <h3 className="mt-6 text-xl font-semibold">{s.title}</h3>
-                <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
-              </div>
-            ))}
+          <div className="mt-14 grid gap-px overflow-hidden rounded-lg border border-border bg-border md:grid-cols-2 lg:grid-cols-6">
+            {services.map((s, i) => {
+              const isLast = i === services.length - 1;
+              return (
+                <div
+                  key={s.title}
+                  className={`group bg-background p-8 transition-colors hover:bg-card md:col-span-1 lg:col-span-2 ${
+                    isLast ? "md:col-span-2 lg:col-span-6 lg:text-center" : ""
+                  }`}
+                >
+                  <s.icon
+                    className={`size-6 text-primary ${isLast ? "lg:mx-auto" : ""}`}
+                    strokeWidth={1.5}
+                  />
+                  <h3 className="mt-6 text-xl font-semibold">{s.title}</h3>
+                  <p
+                    className={`mt-3 text-sm leading-relaxed text-muted-foreground ${
+                      isLast ? "lg:mx-auto lg:max-w-2xl" : ""
+                    }`}
+                  >
+                    {s.text}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         </section>
 
