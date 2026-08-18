@@ -311,7 +311,7 @@ function Index() {
               size="lg"
               className="glow mt-10 bg-heat font-display text-primary-foreground"
             >
-              <a href="mailto:hola@kineticgt.com?subject=Auditoría%20Kinetic%20GT">
+              <a href="mailto:kineticgtgroup@gmail.com?subject=Auditoría%20Kinetic%20GT">
                 Solicitar auditoría <ArrowUpRight className="ml-1 size-4" />
               </a>
             </Button>
@@ -333,8 +333,8 @@ function Index() {
             KINETIK GT GROUP
           </span>
           <span>Automatización con IA para concesionarios · España</span>
-          <a href="mailto:hola@kineticgt.com" className="hover:text-foreground">
-            hola@kineticgt.com
+          <a href="mailto:kineticgtgroup@gmail.com" className="hover:text-foreground">
+            kineticgtgroup@gmail.com
           </a>
         </div>
       </footer>
