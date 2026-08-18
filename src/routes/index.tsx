@@ -306,21 +306,35 @@ function Index() {
               Auditoría gratuita de 30 minutos: analizamos tu flujo de clientes y te entregamos un plan
               de automatización concreto, lo trabajes con nosotros o no.
             </p>
-            <Button
-              asChild
-              size="lg"
-              className="glow mt-10 bg-heat font-display text-primary-foreground"
-            >
-              <a href="mailto:kineticgtgroup@gmail.com?subject=Auditoría%20Kinetic%20GT">
-                Solicitar auditoría <ArrowUpRight className="ml-1 size-4" />
-              </a>
-            </Button>
-            <p className="mt-6 text-sm text-muted-foreground">
-              O llámanos:{" "}
-              <a href="tel:+34675436098" className="text-foreground hover:text-heat">
-                +34 675 43 60 98
-              </a>
-            </p>
+            <Dialog>
+              <DialogTrigger asChild>
+                <Button size="lg" className="glow mt-10 bg-heat font-display text-primary-foreground">
+                  Solicitar auditoría <ArrowUpRight className="ml-1 size-4" />
+                </Button>
+              </DialogTrigger>
+              <DialogContent className="sm:max-w-md">
+                <DialogHeader>
+                  <DialogTitle className="font-display">¿Cómo prefieres contactarnos?</DialogTitle>
+                  <DialogDescription>
+                    Elige la vía que te resulte más cómoda y te respondemos el mismo día.
+                  </DialogDescription>
+                </DialogHeader>
+                <div className="mt-2 grid gap-3">
+                  <Button asChild size="lg" className="bg-heat font-display text-primary-foreground">
+                    <a href="mailto:kineticgtgroup@gmail.com?subject=Auditoría%20Kinetik%20GT%20Group">
+                      <Mail className="mr-2 size-4" /> Enviar correo
+                    </a>
+                  </Button>
+                  <Button asChild size="lg" variant="outline" className="font-display">
+                    <a href="tel:+34675436098">
+                      <PhoneCall className="mr-2 size-4" /> Llamar +34 675 43 60 98
+                    </a>
+                  </Button>
+                </div>
+              </DialogContent>
+            </Dialog>
+
+
 
           </div>
         </section>
